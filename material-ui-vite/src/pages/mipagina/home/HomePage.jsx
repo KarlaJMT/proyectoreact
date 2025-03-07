@@ -1,7 +1,7 @@
 import React, { use } from "react";
 import Grid from '@mui/material/Grid2';
 import { TextField, Button, Card } from "@mui/material";
-import ContenidoComida from './ContenidoComida';
+import ContenidoComida from '../../ContenidoComida';
 // import { useEffect } from "react";
 
 export default function HomePage() {
@@ -17,7 +17,7 @@ export default function HomePage() {
     const obtenercomidaxnombre = async () => {
         const buscar = textobuscar.trim();
         if (textobuscar === "") {
-            alert("Campos vacíos, escribe algo.")
+            alert("Campos vacíos, introduce algo.")
         } else {
             
             const requestOptions = {
@@ -56,18 +56,19 @@ export default function HomePage() {
             <br />
 
             <Grid container spacing={2} padding={4} alignItems="center">
-                <Grid item xs={8} md={8}>
-                    <Card variant="outlined">
+                <Grid   size={{xs:8 , md:8}} >
+                    <Card variant="standtard">
                         <TextField onChange={e=>setTextoB(e.target.value)}
                             label='Pon nombre de comida'
                             fullWidth
                             size="medium"
+                            variant="filled"
                             id="food-name"
                             aria-label="Introduce el nombre de la comida"
                         />
                     </Card>
                 </Grid>
-                <Grid item xs={4} md={4}>
+                <Grid size={{xs:4 , md:4}}>
                     <Button
                         variant="contained"
                         size="large"

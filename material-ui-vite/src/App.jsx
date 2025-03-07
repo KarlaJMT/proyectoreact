@@ -9,7 +9,8 @@ import  ComponenteEncabezado  from './Components/ComponenteEncabezado';
 // import ListaProductos from './Components/ListaProductos';
 //  import ProductosLista from './Components/ProductosLista';
 // import MiProyecto from './Components/miniproyecto/MiProyecto';
-import HomePage from './pages/HomePage';
+// import HomePage from './pages/mipagina/home/HomePage';
+import AppRoutes from './pages/mipagina/AppRoutes';
 
 export default function App () {
   return (
@@ -17,7 +18,8 @@ export default function App () {
    <ComponenteEncabezado/>
    {/* <ProductosLista/> */}
    {/* <MiProyecto/> */}
-   <HomePage/>
+   {/* <HomePage/> */}
+   <AppRoutes/>
     </div>
     
     
